@@ -14,9 +14,11 @@ digraph {
     A -> B [label = "Une capacité\nde A sur B"]
     A -> B [label = "Une autre capacité\n de A sur B"]
     B -> C [label = "Capacité de B sur C"] -->
+
     ############################################################"
 
-    subgraph cluster_p {
+    <!-- It's important to prepend the subgraph names with "cluster" to have them behave correctly -->
+    <!-- subgraph cluster_p {
         label = "Parent";
 
         subgraph cluster_c1 {
@@ -39,26 +41,8 @@ digraph {
             label = "Child two";
             e;
         }
-    }
+    } -->
 
-    subgraph cluster_name {
-        label = "Name";
-        name;
-
-        subgraph test_1 {
-            label= "Test 1";
-            test_1;
-        }
-
-        subgraph test_2 {
-            label = "Test 2";
-            test_2;
-
-            subgraph test_21 {
-                label = "Test 21";
-                test_21;
-            }
-        }
-    }
+    
 }
 ```
