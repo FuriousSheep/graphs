@@ -8,7 +8,8 @@
 
  -->
 digraph {
-    
-    a -> {b, c}
+    {rank = same user_shell } 
+    user_shell [shape = record label = "{Shell|{ | } }"]
+
 }
 ```
